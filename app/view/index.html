@@ -1,0 +1,42 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='../static/style.css'>
+        <script src='../static/client.js'></script>
+    </head>
+    <body>
+        <div>
+            <div class="center">
+                <!-- the src or the img link should be "Downloadable link" i.e., generated using google drive link generator otherwise u won't be able to see it when u deploy. Same like Model -->
+                <a href="/"><img height="80" width="80" src="https://drive.google.com/uc?export=download&id=1p8XSxUYd-zdxeNYG3ilb25whLcI35olE" ></a>
+            </div>
+            <div class="center">RTS</div>
+            <div class='center'>
+                <div class='title'>DOGE - What Breed is that Dog?</div>
+                <div class='content'>
+                    <div class='no-display'>
+                        <input id='file-input'
+                            class='no-display'
+                            type='file'
+                            name='file'
+                            accept='image/*'
+                            onchange='showPicked(this)'>
+                    </div>
+                    <button class='choose-file-button' type='button' onclick='showPicker()'> Select an Image of a Dog </button>
+                    <div class='upload-label'>
+                        <label id='upload-label'> No file chosen </label>
+                    </div>
+                    <div>
+                        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+                    </div>
+                    <div class='analyze'>
+                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'> Click Me to Know! </button>
+                    </div>
+                    <div class='result-label'>
+                        <label id='result-label'> Am I correct? :p </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
